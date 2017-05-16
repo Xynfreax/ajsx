@@ -1,0 +1,105 @@
+.ajmultitab{
+  position: relative;
+  border-bottom: : solid 1px #DDDDDD;
+
+  width:100%;
+  max-width:100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  >.header{
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    // border: solid 1px red;
+    height: 45px;
+    width:100%;
+    max-width:100%;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.11, 0.5, 0.16, 0.5) 0ms;
+    >.tabbutton{
+      position: relative;
+      // border: solid 1px blue;
+      flex-grow: 1;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      margin: 0px!important;
+      border: 0;
+      background-color: #3f4d52;//#03A9F4;
+      box-shadow: none;
+      height: 100%;
+      border-bottom: solid 3px #243135;
+      border-radius: 0px;
+      color:white;
+
+    }
+    >.tabbutton.selected{
+      border-bottom: solid 3px #03A9F4;//#02405c
+      background-color: #2D3C52
+    }
+    >.line{
+      position: absolute;
+      height: 100%;
+      min-height: 100%;
+      left:0px;
+      top:0px;
+      color:transparent;
+      min-height: 1px;
+      background-color: #02405c;
+      width: 0px;
+      transition: all 0.5s cubic-bezier(0.11, 0.5, 0.16, 0.5) 0ms;
+    }
+  }
+  >.content{
+    transform:translate3d(0,0,0);
+    position: relative;
+    flex-grow: 1;
+    min-height: 1px;
+    overflow-y: auto;
+    // border:solid 1px red;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+
+    >.tabcontent{
+      transform:translate3d(0,0,0);
+      overflow-y: auto;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      // border: solid 1px blue;
+      width: 100%;
+      max-width: 100%;
+      // border: solid 3px blue;
+      // overflow-x: hidden;
+      // height: auto;
+      // max-height: 500px;
+      // transition: margin-left 0.5s cubic-bezier(0.12, 0.5, 0.12, 0.5) 0ms,height 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+
+
+      //----->transition: margin-left 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms;//,height 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms,max-height 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+      transition:transform 0.25s cubic-bezier(0.05, 0.25, 0.08, 0.25) 0ms;//,height 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms,max-height 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+      // transition:height 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms,
+      // transition: max-height 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    }
+    >.tabcontent.disabled{
+      transform:translate3d(0,0,0);
+      // transition:height 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+      // transition: margin-left 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms,height 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms,max-height 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+      pointer-events: none;
+      // height:  0px;
+      // height:  100px;
+      overflow-y: hidden;;
+    }
+    >.tabcontent.disable.ceroheight{
+      height: 0px;
+    }
+  }
+
+}

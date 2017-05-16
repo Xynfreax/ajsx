@@ -1,0 +1,70 @@
+.ajselabel{
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  // border: solid 1px red;
+  height: 45px;
+  min-height: 45px;
+  // border: solid 1px red;
+  >span{
+    min-width:100%;
+    position: absolute;
+    // vertical-align: top;
+    padding: 0px 5px;
+    padding-top: 3px;
+    // text-align: right;
+    order:-1;
+    // margin-top: 10px;
+    top:0px;//seria 20px si el select no tuviera contenido
+    font-size: 13px;
+    color:#5264AE;
+    // font-weight: bold;
+    transition:0.2s ease all;
+  }
+  >.ajselect:not([multiple]){
+    position: relative;
+    flex-grow: 1;
+    vertical-align: top;
+    background-color: transparent;
+    top: 20px;
+    height: 25px;
+    max-height: 25px;
+    min-width: 100%;
+
+
+  }
+
+}
+// .ajselabel[multiple]:after {
+//   content:'sd'
+// }
+._ajselabel:after {
+    content:'\2193';
+    // font:10px "Consolas", monospace;
+    color:black;
+    // -webkit-transform:rotate(90deg);
+    // -moz-transform:rotate(90deg);
+    // -ms-transform:rotate(90deg);
+    // transform:rotate(90deg);
+    // right:8px; top:2px;
+    right:0px;
+    padding:0 0 0px;
+
+    // border: 1px solid transparent;
+    border:1px solid rgb(143, 143, 143);
+    border-radius: 0px 3px 3px 0px;
+    height: calc(100%-8px);
+    max-height: 25px;
+    width:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #F4F4F4;
+    position:absolute;
+    pointer-events:none;
+}

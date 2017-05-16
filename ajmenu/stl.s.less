@@ -1,0 +1,74 @@
+.ajmenu{
+  min-width: 300px;
+  margin: 0px;
+  .myul(){
+    list-style-type: none;
+    padding-left:10px;
+    // border:solid 1px yellow;
+  };
+  .myul;
+  border:solid 1px black;
+  padding-left: 0px;
+  background-color: #303439;//#EFF0F1;
+    .ajbutton{
+      margin:0!important;
+      background-color: #303439;
+      color:white;
+    }
+    .ajbutton:hover{
+      background-color: rgb(65, 69, 79);
+      // color:white;
+    }
+  ul{
+    .myul
+  }
+  li{
+    list-style-type: none;
+    // border: solid 1px black;
+  }
+  .ajitem{
+    .ajbutton{
+      width: 100%;
+      text-align: left;
+      border:transparent;
+    }
+  }
+  .ajitem_after() {
+      position: absolute;
+      content: "";
+      width: 1rem;
+      height: 1rem;
+      left: 100%;
+      margin-left: -20px;
+      top: 50%;
+      margin-top: -0.5rem;
+      color: inherit;
+      line-height: 1;
+      font-size: 1.1rem;
+  }
+  .ajitem.opened{
+    >ul{
+      display: block
+    }
+    >.ajbutton::after{
+      .ajitem_after;
+      content:'\2193'
+    }
+
+  }
+  .ajitem.closed{
+    >ul{
+      display: none
+    }
+    >.ajbutton::after{
+      .ajitem_after;
+      // content:'\2192'
+      content:'-'
+    }
+  }
+
+
+  // .ajitem:hover{
+  //   background-color:
+  // }
+}

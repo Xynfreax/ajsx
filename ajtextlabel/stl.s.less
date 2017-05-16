@@ -1,0 +1,60 @@
+.ajtextlabel{
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  // border: solid 1px red;
+  // height: 45px;
+  // min-height: 45px;
+  // border: solid 1px red;
+  >span{
+    // border: solid 1px blue;
+    //--width: 180px;
+    min-width:100%;
+    position: absolute;
+    // vertical-align: top;
+    padding: 0px 5px;
+    padding-top: 3px;
+    // text-align: right;
+    order:-1;
+    // margin-top: 10px;
+    top:20px;
+    font-size: 16px;
+    color:rgb(114, 115, 116);
+    // font-weight: bold;
+    transition:0.2s ease all;
+  }
+  >.ajtextarea{
+    position: relative;
+    flex-grow: 1;
+    vertical-align: top;
+    background-color: transparent;
+    top: 20px;
+    // height: 25px;
+    // max-height: 25px;
+    min-width: 100%;
+  }
+  >textarea:focus{
+    // animation:inputHighlighter 0.3s ease;
+    outline:none;
+    // background-color: red;
+  }
+  // >input:not([type=checkbox]):focus ~ span,>input:not([type=radio]):focus ~ span,>.focused,>input:not(:placeholder-shown){//input:valid ~ span
+  >textarea:focus ~ span,>textarea:focus ~ span,>textarea:not(:placeholder-shown)~ span{//input:valid ~ span
+    top:0px;
+    font-size:13px;
+    color:#5264AE;
+  }
+
+}
+.ajtextlabel.alone{
+  .ajtextarea+span,.ajtextarea+span{
+    display: none;
+    // color:yellow;
+    // border: solid 1px black
+    // margin: 0px;
+  }
+}

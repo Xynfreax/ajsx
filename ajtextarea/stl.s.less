@@ -1,0 +1,43 @@
+.ajtextarea{
+  border: solid 0px rgb(143, 143, 143);
+  border-bottom: solid 1px rgb(143, 143, 143);
+  height: 45px;
+  // height: 25px;
+  min-height: 25px;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  background-color: white;
+  // border:solid 1px rgb(143, 143, 143);
+  border-radius: 0px;
+  // transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  // transition: all 450ms linear;
+  padding: 0px 5px;
+  box-shadow: none;
+
+}
+.ajtextarea[disabled],.ajtextarea[readonly]{
+  background-color: #FBFBFB;
+  cursor:not-allowed;
+}
+.ajtextarea:focus{
+  // background-color: rgb(227, 236, 249);
+  outline-width: 0;
+  outline-offset: -2px;
+  border-bottom-color:  #3F51B5;
+  border-color:  #3F51B5;
+  border-bottom-width: 2px;
+}
+.ajtextarea[type='number']{
+  text-align: right;
+}
+.ajtextarea[required]{
+  border-bottom-color: red;
+  outline-width:2;
+  outline-color: yellow;
+}
+.ajtextarea:not(:valid){
+  outline-width:2 !important;
+  outline-color: yellow !important;
+  box-shadow: none;
+}

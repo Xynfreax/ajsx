@@ -1,0 +1,19 @@
+$$.require(['stl.s'],function() {
+  $c.add={
+    tag:'div'
+    ,id:'ajreportviewer'
+    ,children:[
+      {
+        tag:'div'
+      }
+      ,{
+        tag:'iframe'
+        ,classN:'myiframe'
+        ,innerId:'myiframe'
+      }
+      ,{
+        tag:'div'
+      }
+    ]
+  }
+})

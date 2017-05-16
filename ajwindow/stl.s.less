@@ -1,0 +1,123 @@
+.ajwindow{
+  // transform:rotateZ(360deg);
+  // transform:translateZ(0);
+  // transform:translate3d(0,0,0);
+  // font-family: inherit;
+  padding:0px;
+  border:solid 1px rgb(68, 68, 68);
+
+
+  width:100%;
+  // width:0;
+  height:100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+// box-shadow: 0px 0px 60px -10px rgb(50, 50, 50);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+// background-color: #EDEDED;//#ffffff;
+background-color: #ffffff;
+// background-color: #1C1C1C;
+// font-family:"Segoe UI", "Open Sans", sans-serif, serif;
+font-family:"Roboto", "Open Sans", "sans-serif", "serif";
+font-size: 12px;
+  background-image: url(../../vista/icons/loading2.gif);
+  background-position:center 50%;
+  background-size:auto;
+  background-repeat: no-repeat;
+  // color:#626365;
+  color:#2f2f2f;
+  // transition: opacity 0.5s cubic-bezier(0.12, 0.5, 0.16, 0.5) 0ms,/*max-height 3s linear;*/max-height 0.5s cubic-bezier(0.12, 0.5, 0.16, 0.5) 0ms;
+  // transition: opacity 0.125s cubic-bezier(0.03, 0.125 0.04, 0.125) 0ms,/*max-height 3s linear;*/max-height 0.125s cubic-bezier(0.03, 0.125, 0.0
+  //   4, 0.125) 0ms;
+    //--transition: opacity 0.125s cubic-bezier(0.03, 0.125 0.04, 0.125) 0ms;/*max-height 3s linear;*/
+    transition: opacity 0.125s cubic-bezier(0.03, 0.125 0.04, 0.125) 0ms max-height 5s cubic-bezier(1.2,5,1.6, 5) 0ms;
+  // transition-property: opacity height;
+  // transition:none;
+  opacity: 0;
+ .domElement.unseen{
+   display: none;
+ }
+  // display: none;
+
+  >.content{
+    opacity: 0;
+    transform: rotateZ(360deg);
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width:100%;
+    max-width:100%;
+    flex-grow: 1;
+    min-height: 1px;
+    // background-color: #EFF0F1;//plasma kde
+    // background-color: #EDEDED;
+    background-color: #ffffff;
+    // border: solid 2px red;
+    // flex-grow: 1;
+
+
+    // label{
+    //   margin:5px 5px;
+    //   // width: 180px;
+    //   min-width: 180px;
+    //   display: block;
+    //   text-align: right;
+    //   // width: calc(20%-5px);
+    //   width: 100%;
+    //   vertical-align: top;
+    //   border: solid 1px red;
+    //
+    // }
+    // input{
+    //   // display: inline;
+    //   // margin:5px 5px;
+    //
+    //   // width: calc(80%-5px);
+    //   width: 80%;
+    //   vertical-align: top;
+    //   border: solid 1px grey;
+    //   height: 25px;
+    //   // float: right;
+    // }
+    .ajbutton{
+      // margin: 5px;
+    }
+  }
+  >.bcontent{
+    flex-shrink: 0;
+    // padding: 5px;
+    display: flex;
+    // background-color: #EDEDED;
+    border-top: solid 1px rgb(161, 168, 176);
+    box-shadow: 0px -2px 2px 1px rgba(64,62,64,0.6)
+  }
+}
+.ajwindow.afters{
+  // transition:max-height 0.5s cubic-bezier(0.12, 0.5, 0.16, 0.5) 0ms;
+  // transition:max-height 5s cubic-bezier(1.2, 5, 1.6, 5) 0ms   !important;
+}
+.ajwindow[open]{
+  display: flex!important ;
+
+}
+// .ajwindow[role='dialog'].modal{
+.ajwindow.modal{
+  transform:translate3d(0, -50%,0);
+  width:60%;
+  max-width: 90%;
+  max-height: 60px;
+  min-height: 60px;
+  height: auto;
+  // height: 90%;
+  // border-radius: 5px;
+  overflow: hidden;
+  border:solid 0px black;
+}
+.ajwindow:not(.modal){
+
+}
+.ajwindow::backdrop{
+  background-color: rgba(131, 131, 131, 0.36);
+}
