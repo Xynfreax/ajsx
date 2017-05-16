@@ -1,0 +1,65 @@
+
+@font-face {
+    font-family: "Sansation";
+    src: url("fuentes/sansation/Sansation_Regular.ttf");
+}
+@font-face {
+    font-family: "Sansation";
+    src: url("fuentes/sansation/Sansation_Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Sansation";
+    src: url("fuentes/sansation/Sansation_Bold_Italic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Sansation";
+    src: url("fuentes/sansation/Sansation_Italic.ttf");
+    font-style: italic;
+}
+
+/*
+@font-face {
+    font-family: "Gilroy";
+    src: url("fuentes/Gilroy-FREE/Gilroy-Light.otf") format("otf");
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("fuentes/Gilroy-FREE/Gilroy-ExtraBold.otf") format("otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url("fuentes/NotoSans-hinted/NotoSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Noto Sans";
+    src: url("fuentes/NotoSans-hinted/NotoSans-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Noto Sans";
+    src: url("fuentes/NotoSans-hinted/NotoSans-Italic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Noto Sans";
+    src: url("fuentes/NotoSans-hinted/NotoSans-BoldItalic.ttf");
+    font-style: bold, italic;
+}
+*/
+
+
+
+*{
+  /*background-image: url(fuentes/sansation/Sansation_plate.jpg);*/
+
+}
+body{
+  /*font-family: "Sansation";*/
+  font-family:"Segoe UI", "Open Sans", sans-serif, serif;
+}

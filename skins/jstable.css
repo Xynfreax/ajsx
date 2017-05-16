@@ -1,0 +1,99 @@
+.jstable{
+  background-color: white;
+
+  color:#555;
+  margin: 10px
+}
+.jstable .innerId_mytop{
+  overflow-y: visible;
+  margin: 10px 0px;
+  background-color: #F1F2F3
+}
+.jstable .innerId_mytop .innerId_myselect,.jstable .innerId_mytop .innerId_myjscheckselect,.jstable .innerId_mytop .innerId_mysearch{
+  background-color: white;
+  border: solid 1px grey;
+  border-radius: 3px;
+  margin: 5px;
+  height: 30px;
+  /*padding: 5px*/
+}
+.jstable .innerId_mytop .innerId_myselect{
+  margin-left: 0px;
+}
+.jstable .innerId_mytop .innerId_mysearch{
+  margin-right: 0px;
+}
+.jstable .innerId_mytop .innerId_myjscheckselect,.jstable .innerId_mytop .innerId_mysearch{
+  padding: 5px
+}
+.jstable .innerId_mytop .innerId_myjscheckselect{
+  padding: 5px 0px
+}
+
+.jstable .innerId_mytable{
+  border:solid 1px grey;
+  border-radius: 5px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width:100%;
+  background-color: white;
+  /*cursor: default;*/
+
+}
+.jstable .innerId_mytable .rowSelected td{
+  background-color: #3DAEE9;
+  color:white;
+}
+
+.jstable td, .jstable th{
+    border: solid 1px #111;
+    padding:0px 5px;
+    height: 20px !important;
+    font-size: 13px;
+}
+.jstable th div{
+  background-color: #e5e5e5;
+  padding:5px;
+}
+.jstable th{
+  padding:0px;
+  border-top:solid 1px #ddd;
+  border-bottom:solid 1px #ddd;
+  text-align: left
+
+}
+.jstable .innerId_nav{
+  /*border:solid 1px grey;*/
+  padding: 5px 0px;
+  width:100%;
+  height: auto;
+  text-align: right;
+}
+.jstable .innerId_nav .innerId_left,.jstable .innerId_nav .innerId_right,.jstable .innerId_nav .innerId_num{
+  position: relative;
+  display: inline-block;
+  border:solid 1px grey;
+  width:15px;
+  margin: 3px;
+  cursor: pointer;
+  text-align: center;
+
+}
+.jstable .innerId_nav .innerId_num{
+  border: initial
+}
+.jstable .innerId_nav .innerId_num{
+  width:auto;
+}
+.jstable .innerId_nav .innerId_num div{
+  position: relative;
+  display: inline-block;
+  width:auto;
+  min-width: 16px;
+  margin:0px 3px;
+  border: solid 1px grey;
+}
+.jstable .innerId_nav .innerId_num .sele{
+  background-color: grey;
+  color:white
+}

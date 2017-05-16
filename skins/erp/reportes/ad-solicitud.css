@@ -1,0 +1,57 @@
+.ad-solicitud{
+  padding: 2cm!important
+}
+.ad-solicitud .solic{
+  position: relative;
+  display: inline-block;
+  /*float: right;*/
+  width: 50%;
+  /*border: solid 1px red;*/
+  padding: 0px;
+  margin: 0.5cm 0cm;
+  margin-left: 50%;
+
+
+}
+.ad-solicitud .solicito{
+  position: relative;
+  min-height: 100%;
+  display: inline-block;
+  font-weight: bold;
+  float: left;
+  border: solid 1px transparent;
+  padding-right: 0.1cm;
+
+}
+.ad-solicitud .solicitot{
+  /*display: inline-block;*/
+}
+.ad-solicitud .solicuerpo{
+  text-indent: 5em;
+  line-height: 2em;
+  margin: 1em 0cm;
+  text-align: justify;
+}
+.ad-solicitud .solicporexpuesto{
+  font-weight: bold;
+  text-indent: 0em;
+}
+.ad-solicitud .lugarfecha{
+  display: block;
+  width: 100%;
+  text-align: right;
+  margin:1em 0cm;
+}
+.ad-solicitud .firma{
+  margin-top: 6cm;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.ad-solicitud .firmanombre{
+  position: relative;
+  display: inline-block;
+  padding: 0cm 0.2cm;
+  max-width: 90%;
+  border-top: solid 1px black;
+}

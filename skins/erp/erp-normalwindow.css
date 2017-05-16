@@ -1,0 +1,29 @@
+/*
+.erp-normalwindow{
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E9EC;
+  font-family: Arial
+}
+.erp-normalwindow .innerId_mytitle{
+  position: relative;
+  width: 100%;
+  min-height: 50px;
+  padding: 0px 10px;
+  display: flex;
+  background-color: #F2F4F6;
+  align-items:center;
+  font-size: 25px
+}
+.erp-normalwindow .innerId_mycontent{
+  position: relative;
+  flex-grow: 1;
+  width:100%;
+    padding: 10px;
+}
+
+*/

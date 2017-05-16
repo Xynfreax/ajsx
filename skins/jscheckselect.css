@@ -1,0 +1,33 @@
+.jscheckselect{
+  position: relative;
+  background-color: white;
+  border: solid 1px grey;
+  overflow-y: visible;
+  cursor: pointer;
+}
+.jscheckselect .innerId_mybox{
+  position: absolute;
+  //width: 200px;
+  /*min-width: 100%;*/
+  top:100%;
+  z-index: 999;
+  background-color: white;
+  padding: 5px;
+}
+.jscheckselect .innerId_mybox label{
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width:auto;
+
+}
+.jscheckselect .innerId_mybox div{
+  position: relative;
+  display: inline-block;
+
+  white-space: nowrap;
+}
+.jscheckselect .innerId_mybox input{
+  position: relative;
+  display: inline-block;
+}

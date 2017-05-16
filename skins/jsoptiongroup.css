@@ -1,0 +1,7 @@
+.jsoptiongroup{
+  background-color:white;
+}
+.jsoptiongroup label{
+  display: flex;
+  border: solid 1px blue
+}

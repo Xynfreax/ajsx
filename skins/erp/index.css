@@ -1,0 +1,14 @@
+.formBase{
+  /*background-color: #EFF0F1!important*/
+  background-color: #EFF0F1
+}
+
+.index{
+  padding: 0px!important;
+  /*;font-family: Noto Sans;*/
+  height: 100%;
+  min-height: 100%;
+  background-color: #1C1C1C;
+
+
+}

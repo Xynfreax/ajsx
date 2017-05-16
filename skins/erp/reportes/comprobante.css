@@ -1,0 +1,28 @@
+.comprobante div{
+  overflow: hidden
+}
+.comprobante .innerId_mytop div{
+  position: absolute;
+  border:solid 1px green;
+  font-size: 2mm
+}
+.comprobante .innerId_mybottom{
+  position:relative;
+  border:solid 1px green;
+  height:1.0cm;
+}
+.comprobante .innerId_mybottom .innerId_mytotal{
+  position: absolute;
+  font-size: 2mm;
+  border:solid 1px green;
+  top:0.1cm;
+  left:9.6cm
+}
+.comprobante innerId_mytable td{
+  white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+/*.comprobante  div{
+  font-size: 2mm
+}*/

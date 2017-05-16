@@ -1,0 +1,66 @@
+.ad-ficha{
+
+}
+.ad-ficha .innerIdP_mytitle{
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin: 1cm 0px;
+}
+.ad-ficha .innerIdP_mysub{
+  position: relative;
+  /*border: solid 1px red;*/
+  width:100%;
+  margin: 0.2cm 0cm;
+
+}
+.ad-ficha div{
+  display: inline-block;
+}
+.ad-ficha .innerIdP_myspacer{
+  flex-grow: 1
+}
+.ad-ficha .innerIdP_codigo{
+  font-weight: bold;
+  padding-left: 0.1cm
+}
+.ad-ficha .innerIdP_finscripcion{
+  font-weight: bold;
+  padding-left: 0.1cm
+}
+.ad-ficha .mytitle1{
+  font-weight: bold;
+  margin: 0.1cm 0px;
+}
+.ad-ficha .myfirmas{
+  position: relative;
+  margin-top: 4cm;
+  display: block;
+  /*border: solid 1px red;*/
+  text-align: center;
+}
+
+.ad-ficha .myfirma{
+  border-top: solid 1px black;
+  padding: 0cm 0.5cm;
+  margin: 0.2cm;
+  max-width: 8cm;
+  /*margin-left:auto;
+  margin-right:auto;*/
+}
+.ad-ficha .firmapadre{
+  margin-right: 1.5cm;
+
+}
+.ad-ficha .table1{
+  border-collapse: collapse;
+  width: 100%;
+}
+.ad-ficha .table1 td{
+  border: solid 1px black;
+  padding: 0cm 0.1cm;
+}
+.ad-ficha .table1 td.tdname{
+  text-align: right;
+}

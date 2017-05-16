@@ -1,0 +1,121 @@
+/*--principal--*/
+
+
+/*@font-face {
+    font-family: Sansation;
+    src: url("fuentes/sansation/Sansation_Regular.ttf");
+}
+*/
+.principal{
+  /*font-family:"Sansation";*/
+  padding: 0px !important
+  ;color:black;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  /*height: auto;*/
+  min-height: 100%;
+  border: solid 3px black;
+  background-color: #F9F9F9;
+  transition:0.5s
+
+}
+.principal .erp-header{
+  height: 60px;
+  display: flex;
+  background-color: #1052A5
+
+}
+.principal .erp-header .innerId_mylogo{
+  background-color: white;
+  width:300px;
+  height: 100%;
+  display: inline-flex;
+}
+.principal .erp-header .innerId_mytoolbar{
+  flex-grow: 1
+}
+.principal .erp-header .innerId_myuser{
+  position: relative;
+  /*width: 250px;*/
+  height: 100%;
+  border: solid 1px green;
+  display: flex;
+  align-items: center;
+  color:white;
+  justify-content: flex-end;;
+
+}
+.principal .erp-header .innerId_myuser .innerId_myuserlogo{
+  width:30px;
+  height:30px;
+}
+
+.principal .erp-header .innerId_myuser .innerId_myusername{
+  margin: 10px;
+  text-align: center;
+  /*flex-grow: 1*/
+}
+.principal .erp-header .innerId_myuser .innerId_myuserbox{
+  width: 250px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  top:100%;
+  right: 0px;
+  border: solid 1px black;
+  background-color: #F9F9F9;
+  z-index: 99996
+}
+.principal .erp-header .innerId_myuser .innerId_myuserbox > .innerId_mytop{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  background-color: #3C8DBC;
+  width: 100%;
+  height: 160px;
+  border: solid 1px black
+}
+.principal .erp-header .innerId_myuser .innerId_myuserbox > .innerId_mytop >.innerId_mylogobig{
+  height: 200px
+}
+
+/*--erp-content--*/
+.erp-content{
+  display: flex;
+  flex-grow: 1;
+  /*border: solid 6px red;*/
+  /*,border:'solid 3px green'*/
+  ,width:100%
+  ,height:100%
+  /*justify-content: center;*/
+  /*align-content: stretch;*/
+  align-items: stretch;
+
+
+}
+.erp-content >.erp-sidemenu{
+  /*border: solid 5px green;*/
+}
+.erp-contentside{
+  height: auto !important;
+  min-height: 100%;
+  border:solid 1px yellow !important;
+  flex-grow: 1;
+  background-image: url('../../../vista/icons/loading2.gif')!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-color: black!important*/
+
+}
+.erp-contentside>*{
+  /*border:solid 3px blue!important;*/
+  height: 100%!important;
+  min-height: 100%!important;
+  max-height: 100%!important;
+
+
+}

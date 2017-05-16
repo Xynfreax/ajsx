@@ -1,0 +1,22 @@
+.jsmenu{
+  /*font-family: 'Arial'*/
+  position: relative;
+  /*min-height: 800px;*/
+  height: 800px;
+  /*border: solid 3px red;*/
+}
+.jsmenu .jsmenuinneritemv{
+  min-height: 25px;
+}
+.jsmenu .jsmenuinneritemv:hover{
+  background-color: grey
+}
+.jsmenu .jsmenuinneritemv .jsmenuitemvtext{
+  display: inline-flex;
+  align-items: center;
+}
+.jsmenu a{
+  text-decoration: none;
+  color:white;
+
+}
