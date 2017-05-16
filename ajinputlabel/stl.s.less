@@ -1,0 +1,171 @@
+.ajinputlabel:hover{
+  // >span{
+  //   position: relative;
+  // }
+}
+
+.ajinputlabel{
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  // border: solid 1px red;
+  height: 45px;
+  min-height: 45px;
+  >span{
+    // border: solid 1px blue;
+    //--width: 180px;
+    width:100%;
+    position: absolute;
+    // vertical-align: top;
+    padding: 0px 5px;
+    padding-top: 3px;
+    // text-align: right;
+    order:-1;
+    // margin-top: 10px;
+    // top:20px;
+    transform-origin: left;
+    transform:translate3d(0,20px,0);
+
+    font-size: 16px;
+    color:rgb(114, 115, 116);
+    // font-weight: bold;
+    transition:0.2s ease all;
+  }
+  >.ajinput{
+    position: relative;
+    flex-grow: 1;
+    vertical-align: top;
+    background-color: transparent;
+    top: 20px;
+    height: 25px;
+    max-height: 25px;
+    min-width: 100%;
+    font-size:16px;
+    // border: solid 1px yellow;
+
+  }
+  >.ajinput[type=checkbox],>.ajinput[type=radio]{
+    order:-1;
+    flex-grow: 1;
+    margin-left: 180px;
+    width:20px;
+    height:20px;
+    min-height: 20px;
+    visibility: hidden;
+    min-width: 20px;
+    top:0px;
+  }
+  >input[type=checkbox]:checked +span:before {
+     color: black;
+     content: "\2713";
+     width:20px;
+     height:20px;
+     min-height:20px;
+     left:-25px;
+     top:0px;
+     background-color: white;
+     border:solid 1px  rgb(143, 143, 143);
+     color:rgb(106, 106, 106);
+     position: absolute;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 18px;
+     border-radius: 0px;
+   }
+  >input[type=checkbox] +span:before {
+    color: white;
+    content: "\2713";
+    background-color: white;
+    border:solid 1px  rgb(143, 143, 143);
+    color:white;
+    width:20px;
+    height:20px;
+    left:-25px;
+    top:0px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 0px;
+  }
+  >input[type=checkbox]:disabled +span:before {
+    filter:brightness(120%);
+  }
+
+  .ajinput[type='checkbox']+span,.ajinput[type='radio']+span{
+    position: relative;
+    text-align: left;
+    position: relative;
+    // border: solid 1px yellow;
+    width:auto;
+    // min-width: none;
+    top:-22px !important;
+    left:25px !important;
+    color:black;
+  }
+  >input:focus{
+    // animation:inputHighlighter 0.3s ease;
+    outline:none;
+  }
+  // >input:not([type=checkbox]):focus ~ span,>input:not([type=radio]):focus ~ span,>.focused,>input:not(:placeholder-shown){//input:valid ~ span
+  >input[type=checkbox]:focus ~ span,>input[type=radio]:focus ~ span,>input[type=checkbox]:not(:placeholder-shown)~ span{//input:valid ~ span
+    top:0px;
+    font-size:16px;
+    color:black;
+    transform: none;
+  }
+  >input:not([type=checkbox]):focus ~ span,>input:not([type=radio]):focus ~ span,>input:not(:placeholder-shown)~ span{//input:valid ~ span
+    // top:0px;
+    // font-size:13px;
+    transform:translate3d(0,0px,0) scale(0.75);
+    // transform-origin: left;
+
+    color:#5264AE;
+  }
+
+  .highlight {
+    position:absolute;
+    height:60%;
+    // width:100px;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  >input:focus ~ .highlight {
+    // animation:inputHighlighter 0.3s ease;
+  }
+  @keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+}
+.ajinputlabel.alone{
+  margin:0px;
+  padding: 5px;
+  padding-top: 8px;
+  height: auto;
+  min-height: initial;
+  .ajinput[type='text']+span,.ajinput[type='text']+span{
+    display: none;
+    // color:yellow;
+    // border: solid 1px black
+    // margin: 0px;
+  }
+  >.ajinput[type='checkbox'],>.ajinput[type='radio']{
+    margin-left: 0px!important;
+    margin: 0px;
+
+
+  }
+  .ajinput[type='checkbox']+span,.ajinput[type='radio']+span{
+    width: auto;//20px
+    // border: solid 1px yellow;
+  }
+}
